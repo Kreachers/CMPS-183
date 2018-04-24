@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cmps183: Homework 1</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <meta charset="UTF-8">
+  <script src="javascript/todoForm.js"></script>
+</head>
+
+<body>
+
+  <header>
+    <h3>cmps183: Homework 2</h3>
+  </header>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a href="todo.html">Todo</a>
+    <a class="active" href="todoForm.html">Todo Form</a>
+  </div>
+
+  <div class="container">
+
+    <div class="left-bar">
+      <h2>Howdy!</h2>
+      <div class="search-settings">
+        <p>
+          This page is pretty straight forward and was probably the easiest one the generalhtml layout was established
+        </p>
+        <br>
+        <p>
+          Lots of help from W3Schools and the Mozilla websites. My roommate also help explain alot of stuff that didnt make a whole lot of since.
+        </p>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Create todo Item</h1>
+      <form name="todoForm" action="./todo.html" onsubmit="return checkDate()" >
+        <label for="titleInput">Title:</label><br>
+        <input id="titleInput" type="text" name="title" value=""><br>
+
+        <label for="dateInput">Due Date:</label><br>
+        <input id="dateInput" type="date" name="dueDate" value=""><br>
+
+        <label for="notesInput">Notes:</label><br>
+        <input id="notesInput" type="text" name="notes" value=""><br><br>
+
+        <button type="submit" onsubmit="return checkDate()">Submit</button>
+      </form>
+    </div>
+
+  </div>
+
+  <footer>
+    <a class="footerAnchor" href="#">About Us</a>
+    <a class="footerAnchor" href="#">Contact</a>
+    <a class="footerAnchor" href="#">Privacy</a>
+    <a class="footerAnchor" href="#">Credits</a>
+  </footer>
+
+</body>
+</html>

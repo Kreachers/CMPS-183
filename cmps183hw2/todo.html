@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cmps183: Homework 1</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <header>
+    <h3>cmps183: Homework 2</h3>
+  </header>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="todo.html">Todo</a>
+    <a href="todoForm.html">Todo Form</a>
+  </div>
+
+  <div class="container">
+
+    <div class="left-bar">
+      <h2>Howdy!</h2>
+      <div class="search-settings">
+        <p>
+          I used <a href="http://www.stoacademy.com/tools/stardate.php">Stardate Calculator</a> to convert regular Earth time into stardates.
+          and the javascript was a real pain to figure out. I also had t consult W3Schools again for some help.
+        </p>
+        <br>
+        <p>
+          Lots of help from W3Schools and the Mozilla websites. My roommate also help explain alot of stuff that didnt make a whole lot of since.
+        </p>
+      </div>
+    </div>
+
+    <template id="todoItemTemplate">
+      <div class="todoItem">
+
+        <p>
+          <input type="checkbox">
+          <span class="titleTemplate">Title</span>
+          <input class="titleTemplateInput hidden" type="text">
+        </p>
+        <p>
+          <span class="dueDateTemplate">Due Date: </span>
+          <input class="dueDateTemplateInput hidden" type="date">
+        </p>
+        <p>
+          <span class="notesTemplate">Notes</span>
+          <input class="notesTemplateInput hidden" type="text">
+        </p>
+        <p class="postedOnTemplate">Posted On: </p>
+        <p class="lastUpdatedTemplate">Last Updated: </p>
+
+        <button class="editButton" type="button">Edit</button>
+        <button class="deleteButton" type="button">Delete</button>
+      </div>
+    </template>
+
+    <div class="main">
+      <h1>Todo list</h1>
+      <button type="button" onclick="showAll()">Show all</button>
+      <button type="button" onclick="showCompleted()">Show Completed</button>
+      <button type="button" onclick="showTodo()">Show To do</button>
+      <div>
+        <button type="button" onclick="sortPosted()">Sort by Posted date</button>
+        <button type="button" onclick="sortUpdate()">Sort by Last Updated</button>
+        <button type="button" onclick="sortDue()">Sort by Due Date</button>
+        <button class="ascendingVsDescending" type="button" onclick="ascendingVsDescending()">Descending</button>
+      </div>
+      <div id="todoListDisplay"></div>
+    </div>
+    <!-- <button type="button" onclick="createList()">createList</button> -->
+
+  </div>
+
+  <footer>
+    <a class="footerAnchor" href="#">About Us</a>
+    <a class="footerAnchor" href="#">Contact</a>
+    <a class="footerAnchor" href="#">Privacy</a>
+    <a class="footerAnchor" href="#">Credits</a>
+  </footer>
+  <script src="javascript/todo.js"></script>
+
+</body>
+</html>

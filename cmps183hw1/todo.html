@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>cmps183: Homework 1</title>
+  <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+  <script src="javascript/todo.js"></script>
+  <meta charset="UTF-8">
+</head>
+
+<body>
+
+  <header>
+    <h3>cmps183: Homework 1</h3>
+  </header>
+
+  <div class="topnav">
+    <a href="index.html">Home</a>
+    <a class="active" href="todo.html">Todo</a>
+    <a href="todoForm.html">Todo Form</a>
+  </div>
+
+  <div class="container">
+
+    <div class="left-bar">
+      <h2>Howdy!</h2>
+      <div class="search-settings">
+        <p>I used <a href="http://www.stoacademy.com/tools/stardate.php">Stardate Calculator</a> to convert regular Earth time into stardates.
+        and the javascript was a real pain to figure out. I also had t consult W3Schools again for some help.</p>
+      </div>
+    </div>
+
+    <div class="main">
+      <h1>Todo list</h1>
+      <button type="button" onclick="showAll()">Show all</button>
+      <button type="button" onclick="showCompleted()">Show Completed</button>
+      <button type="button" onclick="showTodo()">Show To do</button>
+      <div class="todoForm">
+        <div class="todoItem">
+          <input id="item1" type="checkbox">
+          <label for="item1">Celebrate</label>
+          <p>Stardate 89605.25</p>
+          <p>Celebrate with family for the end of the world.</p>
+        </div>
+        <div class="todoItem">
+          <input id="item2" type="checkbox">
+          <label for="item2">Drink</label>
+          <p>Stardate 95897.94</p>
+          <p>Get wasted like theres no tomorrow.</p>
+        </div>
+        <div class="todoItem">
+          <input id="item3" type="checkbox">
+          <label for="item3">Homework</label>
+          <p>Stardate 95716.11</p>
+          <p>Turn homework in.</p>
+        </div>
+        <div class="todoItem">
+          <input id="item4" type="checkbox">
+          <label for="item4">Sleep</label>
+          <p>Eventually</p>
+          <p>Need more sleep.</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <footer>
+    <a class="footerAnchor" href="#">About Us</a>
+    <a class="footerAnchor" href="#">Contact</a>
+    <a class="footerAnchor" href="#">Privacy</a>
+    <a class="footerAnchor" href="#">Credits</a>
+  </footer>
+
+</body>
+</html>
